@@ -2,10 +2,11 @@
 
 import aws_cdk as cdk
 
-from cdk_bastion_host.cdk_bastion_host_stack import CdkBastionHostStack
-
+from stacks.vpc_stack import VPCStack
+from stacks.neptune_stack import NeptuneStack
 
 app = cdk.App()
-CdkBastionHostStack(app, "cdk-bastion-host")
+vpc_stack = VPCStack(app, "BastionStack")
+NeptuneStack(app, "NeptuneStack", vpc=vpc_stack.vpc)
 
 app.synth()
