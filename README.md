@@ -1,5 +1,10 @@
+# Bastion host
 
-# Welcome to your CDK Python project!
+Setups a bastion host to access resources in private subnets of a AWS VPC.
+
+See full article on https://datwit.com/studycases/bastion_host/
+
+## Welcome to your CDK Python project!
 
 You should explore the contents of this project. It demonstrates a CDK app with an instance of a stack (`cdk_bastion_host_stack`)
 which contains an Amazon SQS queue that is subscribed to an Amazon SNS topic.
@@ -54,7 +59,7 @@ To add additional dependencies, for example other CDK libraries, just add to
 your requirements.txt file and rerun the `pip install -r requirements.txt`
 command.
 
-## Useful commands
+### Useful commands
 
  * `cdk ls`          list all stacks in the app
  * `cdk synth`       emits the synthesized CloudFormation template
